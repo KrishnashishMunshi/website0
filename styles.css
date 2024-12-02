@@ -1,0 +1,56 @@
+
+.bg-orange{
+    background-color:#ff6200;
+}
+
+.logo{
+
+    width:55px;
+    height:40px;
+}
+.nav-item .nav-link{
+    color:black;
+    margin-right:30px;
+}
+
+.nav-item .nav-link:hover{
+    color:#ff6200;
+    background-color:black;
+}
+
+body{
+background-color:#ff6200;
+}
+.intro{
+    font-family:"monospace";
+    text-align:center;
+}
+
+.navbar{
+    justify-content:center;
+}
+.navbar-nav {
+    margin: auto; /* Centers the nav links */
+  }
+.active{
+    text-decoration:underline;
+    color:#ffa8fc;
+}
+.intro{
+    padding:30px;
+    margin-top:4%;
+
+}
+.logo{
+    padding:0px;
+    margin-left:45%;
+
+}
+.animate:hover{
+    background-color:black;
+    color:#ff6200;
+}
+button{
+    background-color:blue;
+    justify-content:center;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+        <link href="styles.css" rel="stylesheet">
+        <title>Krishna's Website</title>
+        <script>
+document.addEventListener('DOMContentLoaded', function () {
+    let sun = document.querySelector('.sun');
+    let eclipse = document.querySelector('.eclipse');
+    let body = document.querySelector('body');
+    let textElements = document.querySelectorAll('.text'); // Select all .text elements
+
+    eclipse.addEventListener('click', function () {
+        body.style.backgroundColor = 'black';
+        textElements.forEach((element) => {
+            element.style.setProperty('color', '#ff6200', 'important');
+        });
+    });
+
+    sun.addEventListener('click', function () {
+        body.style.backgroundColor = '#ff6200';
+        textElements.forEach((element) => {
+            element.style.setProperty('color', 'black', 'important');
+        });
+    });
+});
+
+        </script>
+    </head>
+    <body >
+        <nav class="navbar navbar-expand-lg bg-orange">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active text" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text" href="portfolio.html">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text" href="blogs.html">Blogs</a>
+                  </li>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text" href="game.html">Game</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+          <div class="intro">
+            <h2 class="intro text">Hello, I am <span class="animate">Krishnashish Munshi</span>, welcome to my website!</h2>
+          </div>
+
+          <h4 class="intro text">Hello, I am 18 years old currently, I love learning about everything and anything, though programming and math occupy a special place in my heart. I love reading books, I have a dream that I want to manifest this life, and that is to see how high I can go this life.</h4>
+          <h4 class="intro text">Theme:</h4>
+          <button class="sun intro" type="submit">Sun</button>
+          <button class="eclipse intro" type="submit">Eclipse</button>
+    </body>
+</html>
