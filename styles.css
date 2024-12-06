@@ -51,6 +51,10 @@ background-color:#ff6200;
     color:#ff6200;
 }
 button{
-    background-color:blue;
+    background-color:#ff6200;
     justify-content:center;
+}
+
+.theme{
+    justify-content: center;
 }
