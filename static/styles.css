@@ -1,6 +1,6 @@
 
-.bg-orange{
-    background-color:#ff6200;
+.bg-black{
+    background-color:black;
 }
 
 .logo{
@@ -9,18 +9,17 @@
     height:40px;
 }
 .nav-item .nav-link{
-    color:black;
-    margin-right:30px;
-}
-
-.nav-item .nav-link:hover{
+   
     color:#ff6200;
-    background-color:black;
 }
 
-body{
-background-color:#ff6200;
+
+
+.orange{
+    color: #ff6200;
+    
 }
+
 .intro{
     font-family:"monospace";
     text-align:center;
@@ -32,29 +31,48 @@ background-color:#ff6200;
 .navbar-nav {
     margin: auto; /* Centers the nav links */
   }
-.active{
-    text-decoration:underline;
-    color:#ffa8fc;
-}
 .intro{
     padding:30px;
     margin-top:4%;
 
 }
-.logo{
-    padding:0px;
-    margin-left:45%;
-
-}
 .animate:hover{
-    background-color:black;
-    color:#ff6200;
-}
-button{
     background-color:#ff6200;
-    justify-content:center;
+    color:black
+}
+.active{
+    color:#ff6200;
+    text-decoration: underline;
+}
+.text-orange {
+    color: #ff6200 !important;
 }
 
-.theme{
-    justify-content: center;
+.navbar-toggler-icon {
+    background-color: #ff6200;
+}
+/* Orange card background with black text */
+.custom-card {
+    background-color: #ff6200;
+    color: black;
+}
+
+/* Ensures all card text inherits black color */
+.custom-card .card-title,
+.custom-card .card-text {
+    color: black;
+}
+
+/* Custom button with black background and orange text */
+.custom-btn {
+    background-color: black;
+    color: #ff6200;
+    border: none; /* Removes button border */
+}
+
+/* Button hover effect */
+.custom-btn:hover {
+    background-color: #ff6200;
+    color: black;
+    border: 1px solid black;
 }

@@ -1,22 +1,22 @@
-{% extends "index.html" %}
+{% extends "layout.html" %}
 
 {% block body %}
 <div class="container mt-5">
     <!-- Page Title -->
     <div class="text-center mb-5">
-        <h1 class="display-4">{{ data.title }}</h1>
-        <p class="lead">{{ data.meta_description }}</p>
+        <h1 class="display-4 orange">{{ data.title }}</h1>
+        <p class="lead orange">{{ data.meta_description }}</p>
     </div>
 
     <!-- Portfolio Projects Grid -->
     <div class="row">
         {% for item in portfolio_items %}
         <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-            <div class="card h-100 shadow-sm">
+            <div class="card h-100 shadow-sm custom-card">
                 <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">{{ item.title }}</h5>
-                    <p class="card-text">{{ item.description }}</p>
-                    <a href="{{ item.link }}" target="_blank" class="btn btn-primary mt-auto">View Project</a>
+                    <h5 class="card-title text-black">{{ item.title }}</h5>
+                    <p class="card-text text-black">{{ item.description }}</p>
+                    <a href="{{ item.link }}" target="_blank" class="btn custom-btn mt-auto">View Project</a>
                 </div>
             </div>
         </div>
