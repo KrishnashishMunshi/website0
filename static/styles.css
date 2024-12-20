@@ -1,23 +1,71 @@
-
-.bg-black{
-    background-color:black;
+:root{
+--bg-color: #ff6200;
+--text-color: black;
+--button-bg:#ff6200;
+--button-text: black;
 }
 
-.logo{
-
-    width:55px;
-    height:40px;
+[data-theme = "dark"]{
+--bg-color: black;
+--text-color: #ff6200;
+--button-bg:black;
+--button-text: #ff6200;
+  
+}
+.bg-color{
+    background-color:var(--bg-color);
 }
 .nav-item .nav-link{
    
-    color:#ff6200;
+    color:var(--text-color);
+}
+.navbar-toggler-icon{
+    background-color:var(--bg-color);
+}
+.color{
+    color: var(--text-color)!important;
+    
 }
 
+.animate:hover{
+    background-color:var(--text-color);
+    color:var(--bg-color);
+}
+.active{
+    color:var(--text-color);
+    text-decoration: underline;
+}
+.text-color {
+    color: var(--text-color)!important;
+}
 
+.navbar-toggler-icon {
+    background-color: var(--text-color);
+}
+/* Orange card background with black text */
+.custom-card {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+}
 
-.orange{
-    color: #ff6200;
-    
+/* Ensures all card text inherits black color */
+.custom-card .card-title,
+.custom-card .card-text {
+    color: var(--bg-color);
+}
+
+/* Custom button with black background and orange text */
+.custom-btn {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border: none; /* Removes button border */
+}
+
+/* Button hover effect */
+.custom-btn:hover {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    border: 1px solid var(--bg-color);
 }
 
 .intro{
@@ -36,43 +84,8 @@
     margin-top:4%;
 
 }
-.animate:hover{
-    background-color:#ff6200;
-    color:black
-}
-.active{
-    color:#ff6200;
-    text-decoration: underline;
-}
-.text-orange {
-    color: #ff6200 !important;
-}
+.logo{
 
-.navbar-toggler-icon {
-    background-color: #ff6200;
-}
-/* Orange card background with black text */
-.custom-card {
-    background-color: #ff6200;
-    color: black;
-}
-
-/* Ensures all card text inherits black color */
-.custom-card .card-title,
-.custom-card .card-text {
-    color: black;
-}
-
-/* Custom button with black background and orange text */
-.custom-btn {
-    background-color: black;
-    color: #ff6200;
-    border: none; /* Removes button border */
-}
-
-/* Button hover effect */
-.custom-btn:hover {
-    background-color: #ff6200;
-    color: black;
-    border: 1px solid black;
+    width:55px;
+    height:40px;
 }
